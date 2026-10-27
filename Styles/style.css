@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../imagens/fundo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Banners */
+
+.banner-container {
+    width: 100%;
+    max-width: 1119px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.banners {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: passarBanners 20s infinite;
+}
+
+.banners img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* menu e titulo */
+
+.barra-topo {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.titulo h1 {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* MAPA */
+.mapa {
+    width: 1119px;
+    margin: 50px auto;
+}
+
+.mapa h2 {
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* videos ingressos */
+.titulo-ingressos {
+    width: 1119px;
+    margin: 50px auto 0;
+    display: block;
+}
+
+.titulo-ingressos h2 {
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    margin: 0 0 30px 0;
+}
+
+.videos {
+    width: 1119px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ingresso {
+    width: 15%;
+    text-align: center;
+}
+
+.ingresso video {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.ingresso h3 {
+    color: white;
+    margin: 15px 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ingresso h4 {
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* rodapé */
+
+.rodape {
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px 80px;
+    margin-top: 80px;
+
+    box-sizing: border-box;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-coluna h3 {
+    color: #B6FF00;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin: 0 0 20px 0;
+}
+
+.rodape-coluna p,
+.rodape-coluna a {
+    color: #B6FF00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.rodape-coluna a:hover {
+    color: white;
+}
+
+   @keyframes passarBanners {
+
+    /* IMAGEM 1 — parada */
+    0% {
+        transform: translateX(0);
+    }
+
+    14% {
+        transform: translateX(0);
+    }
+
+    /* passa rapidamente para a 2 */
+    16% {
+        transform: translateX(-1119px);
+    }
+
+    /* IMAGEM 2 — parada */
+    30% {
+        transform: translateX(-1119px);
+    }
+
+    /* passa rapidamente para a 3 */
+    32% {
+        transform: translateX(-2238px);
+    }
+
+    /* IMAGEM 3 — parada */
+    46% {
+        transform: translateX(-2238px);
+    }
+
+    /* passa rapidamente para a 4 */
+    48% {
+        transform: translateX(-3357px);
+    }
+
+    /* IMAGEM 4 — parada */
+    62% {
+        transform: translateX(-3357px);
+    }
+
+    /* passa rapidamente para a 5 */
+    64% {
+        transform: translateX(-4476px);
+    }
+
+    /* IMAGEM 5 — parada */
+    78% {
+        transform: translateX(-4476px);
+    }
+
+    /* passa rapidamente para a 6 */
+    80% {
+        transform: translateX(-5595px);
+    }
+
+    /* IMAGEM 6 — parada */
+    94% {
+        transform: translateX(-5595px);
+    }
+
+    /* passa rapidamente para a 7 */
+    96% {
+        transform: translateX(-6714px);
+    }
+
+    /* IMAGEM 7 — parada */
+    100% {
+        transform: translateX(-6714px);
+    }
+}
